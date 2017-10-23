@@ -1,0 +1,10 @@
+body {
+    padding-top: $navbar-height + $separation-height;
+}
+
+hr {
+    background-color: $color-primary;
+    height: 8px;
+    margin-top:    $line-height-computed-costum;
+    margin-bottom: $line-height-computed-costum;
+}
