@@ -56,16 +56,24 @@
     </div>
 
     <div class="container">
-        <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
+        <ui-view ng-hide='layout.loading' ></ui-view>
     </div>
-
+    
     <div class="footer">
         <div class="container">
-            Sa20
-            subtitulo
+            <hr class="hr-footer">
+            <p>Sa20</p>
+            <p>El Blog de Programación donde aprenderàs a desarrollar aplicaciones en Javascript, CSS, HTML5, Angular, Java, Visual Basic, y mucho más.</p>
         </div>
         <div class="container">
-            Redes sociales copyrigth
+            <div class="row">
+                <div class="col-sm-9">
+                    Redes sociales
+                </div>
+                <div class="col-sm-3">
+                    copyrigth
+                </div>
+            </div>
         </div>
     </div>
 
@@ -100,6 +108,7 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/post.js"></script>
     <!-- endbuild -->
 </body>
 </html>

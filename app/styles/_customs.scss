@@ -30,3 +30,22 @@
         width: 350px;
     }
 }
+
+.encuesta {
+    p {
+        font-weight: bold;
+    }
+}
+
+#ngProgress {
+    background-color: $color-default !important;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+}
+
+.hr-footer {
+    height: 1px;
+    background-color: $gray-light;
+}
