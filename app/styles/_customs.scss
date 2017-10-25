@@ -49,3 +49,40 @@
     height: 1px;
     background-color: $gray-light;
 }
+
+.img-sn-link-md {
+    width: 30px;
+}
+
+.footer {
+    margin: 15px 0;
+}
+
+.btn-default {
+    border-color: $color-primary;
+}
+
+.post {
+    font-size: 16px;
+    header {
+        h1 {
+            font-weight: bold;
+        }
+        margin-bottom: $line-height-computed-costum;
+    }
+    .portada {
+        margin-bottom: $line-height-computed-costum;
+    }
+    a {
+        color: darken($color-default, 15%);
+    }
+    .datos {
+        font-size: 13px;
+        color: lighten($color-black, 45%);
+        margin-bottom: $line-height-computed-costum;
+        img, a, span {
+            margin-right: 4px;
+            margin-left: 4px;
+        }
+    }
+}
