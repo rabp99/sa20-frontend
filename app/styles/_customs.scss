@@ -41,8 +41,10 @@
     background-color: $color-default !important;
 }
 
-.btn-link:hover {
-    text-decoration: none;
+.btn-link {
+    &:hover, &:active, &:focus {
+        text-decoration: none;
+    }
 }
 
 .hr-footer {
@@ -63,7 +65,8 @@
 }
 
 .post {
-    font-size: 16px;
+    font-size: 15px;
+    letter-spacing: 1px;
     header {
         h1 {
             font-weight: bold;
@@ -84,5 +87,8 @@
             margin-right: 4px;
             margin-left: 4px;
         }
+    }
+    h4 {
+        font-weight: bold;
     }
 }
