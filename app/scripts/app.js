@@ -31,11 +31,15 @@ angular
 
     var postState = {
         name: 'post',
-        url: '/post',
+        url: '/post/{id}',
         templateUrl: 'views/post.html',
         controller: 'PostCtrl',
-        controllerAs: 'post',
-        title: 'Post'
+        controllerAs: 'PostCtrl',
+        params: {
+            id: {
+                value: '1'
+            }
+        }
     };
     
     

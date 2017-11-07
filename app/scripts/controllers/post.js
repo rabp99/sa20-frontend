@@ -8,6 +8,6 @@
  * Controller of the sa20App
  */
 angular.module('sa20App')
-.controller('PostCtrl', function () {
+.controller('PostCtrl', function ($scope, $stateParams) {
     
 });
