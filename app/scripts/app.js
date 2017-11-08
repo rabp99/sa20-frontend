@@ -42,8 +42,17 @@ angular
         }
     };
     
+    var postsAllState = {
+        name: 'postsAll',
+        url: '/posts-all',
+        templateUrl: 'views/posts-all.html',
+        controller: 'PostsAll',
+        controllerAs: 'postsAll',
+        title: 'Todos los Posts'
+    };
     
     $stateProvider.state(mainState);
     $stateProvider.state(postState);
+    $stateProvider.state(postsAllState);
     $urlRouterProvider.when('', '/');
 });
