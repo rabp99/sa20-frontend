@@ -44,7 +44,7 @@ angular
     
     var postsAllState = {
         name: 'postsAll',
-        url: '/posts-all',
+        url: '/posts',
         templateUrl: 'views/posts-all.html',
         controller: 'PostsAll',
         controllerAs: 'postsAll',
