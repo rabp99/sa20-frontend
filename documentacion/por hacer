@@ -1,3 +1,7 @@
-1. No mostrar header
-2. Al hacer scroll mostrar header
-3. Crear backend de infos
+1. backend de posts
+2. view de posts-add
+3. controller de posts-add
+4. backend de posts-add
+5. view de posts-edit
+6. controller de posts-edit
+7. backend de posts-edit
