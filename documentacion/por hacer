@@ -1,7 +1,20 @@
 1. backend de posts-------------------------------------------------------------
-2. view de posts-add
+2. view de posts-add------------------------------------------------------------
 3. controller de posts-add
 4. backend de posts-add
 5. view de posts-edit
 6. controller de posts-edit
 7. backend de posts-edit
+8. validar posts-add
+9. validar posts-edit
+10. view de categories
+11. controller categories
+12. backend categories
+13. view categories-add
+14. controller categories-add
+15. backend categories-add
+16. view categories-edit
+17. controller categories-edit
+18. backend categories-edit
+19. validar categories-add
+20. validar categories-edit
