@@ -6,9 +6,10 @@ controller categories--------------------------------------------------------
 backend de posts-add---------------------------------------------------------
 view de posts-edit-----------------------------------------------------------
 controller de posts-edit-----------------------------------------------------
-backend de posts-edit
+backend de posts-edit--------------------------------------------------------
 validar posts-add
 validar posts-edit
+show posts en index
 backend categories
 view categories-add
 controller categories-add
