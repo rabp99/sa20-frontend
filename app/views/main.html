@@ -11,9 +11,9 @@
 </div>
 <div class="row dv-sa20">
     <div class="col-sm-8 slider">
-        <div uib-carousel interval="myInterval" no-wrap="noWrapSlides" active="0">
-            <div uib-slide ng-repeat="post in posts track by post.id" index="posts.indexOf(post)">
-                <img class="img-slider" ng-src="{{ post.imagen }}">
+        <div uib-carousel interval="myInterval" no-wrap="noWrapSlides" active="0" ng-show="postsUltimos1.length != 0">
+            <div uib-slide ng-repeat="post in postsUltimos1 track by post.id" index="postsUltimos1.indexOf(post)">
+                <img class="img-slider" ng-src="{{ post.portada }}">
             </div>
         </div>
     </div>
@@ -37,24 +37,12 @@
         <h2>Lo más visto</h2>
         <hr>
         <div class="row posts-mas-vistos">
-            <div class="col-sm-6 post-1">
+            <div class="col-sm-6 post-1" ng-repeat="post in postsMasVistos">
                 <div class="thumbnail">
-                    <img src="http://lorempixel.com/1400/680/" alt="...">
+                    <img ng-src="{{ post.portada }}" alt="{{ post.title }}">
                     <div class="caption">
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cr</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida nulla quam, tempor accumsan dolor venenatis eget. Morbi dictum consequat orci, vitae ultrices erat vehicula sit amet. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et elit massa. Nullam risus orci</p>
-                        <p>
-                            <a href="#" class="btn btn-link pull-right hvr-underline-from-left" role="button">Leer más</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 post-2">
-                <div class="thumbnail">
-                    <img src="http://lorempixel.com/1400/680/" alt="...">
-                    <div class="caption">
-                        <h3>Lorem ipsum dolor</h3>
-                        <p>Lorem ipsum dolor sit amet, dolor venenatis eget. Morbi dictum consequat orci, vitae ultrices erat vehicula sit amet. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et elit massa. Nullam risus orci</p>
+                        <h3>{{ post.title }}</h3>
+                        <p>{{ post.resumen }}</p>
                         <p>
                             <a href="#" class="btn btn-link pull-right hvr-underline-from-left" role="button">Leer más</a>
                         </p>
@@ -74,71 +62,15 @@
         <h2>Últimos Posts</h2>
         <hr>
         <div class="posts-ultimos">
-            <div class="media">
+            <div class="media" ng-repeat="post in postsUltimos2">
                 <div class="media-left">
                     <a href="#">
-                        <img src="http://lorempixel.com/1400/680/" alt="...">
+                        <img ng-src="{{ post.portada }}" alt="{{ post.title }}">
                     </a>
                 </div>
                 <div class="media-body">
-                    <h3>Lorem ipsum dolor sit amet</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget. Morbi dictum consequat orci, vitae ultrices erat vehicula sit amet. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et elit massa. Nullam risus orci</p>
-                    <p>
-                        <a href="#" class="btn btn-link pull-right hvr-underline-from-left" role="button">Leer más</a>
-                    </p>
-                </div>
-            </div>
-            <div class="media">
-                <div class="media-left">
-                    <a href="#">
-                        <img src="http://lorempixel.com/1400/680/" alt="...">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cr</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. dolor venenatis eget. Morbi dictum consequat orci, vitae ultrices erat vehicula sit amet. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et elit massa. Nullam risus orci</p>
-                    <p>
-                        <a href="#" class="btn btn-link pull-right hvr-underline-from-left" role="button">Leer más</a>
-                    </p>
-                </div>
-            </div>
-            <div class="media">
-                <div class="media-left">
-                    <a href="#">
-                        <img src="http://lorempixel.com/1400/680/" alt="...">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h3>Lorem ipsum dolor sit amet, consectetur elit. Cr</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida nulla quam, tempor accumsan dolor venenatis eget. Morbi dictum consequat orci, vitae ultrices erat vehicula sit amet. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et elit massa. Nullam risus orci</p>
-                    <p>
-                        <a href="#" class="btn btn-link pull-right hvr-underline-from-left" role="button">Leer más</a>
-                    </p>
-                </div>
-            </div>
-            <div class="media">
-                <div class="media-left">
-                    <a href="#">
-                        <img src="http://lorempixel.com/1400/680/" alt="...">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cr</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida nulla quam, tempor accumsan dolor venenatis eget. Morbi dictum consequat orci, vitae ultrices erat vehicula sit amet. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et elit massa. Nullam risus orci</p>
-                    <p>
-                        <a href="#" class="btn btn-link pull-right hvr-underline-from-left" role="button">Leer más</a>
-                    </p>
-                </div>
-            </div>
-            <div class="media">
-                <div class="media-left">
-                    <a href="#">
-                        <img src="http://lorempixel.com/1400/680/" alt="...">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cr</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida nulla quam, tempor accumsan dolor venenatis eget. Morbi dictum consequat orci, vitae ultrices erat vehicula sit amet. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et elit massa. Nullam risus orci</p>
+                    <h3>{{ post.title }}</h3>
+                    <p>{{ post.resumen }}</p>
                     <p>
                         <a href="#" class="btn btn-link pull-right hvr-underline-from-left" role="button">Leer más</a>
                     </p>

@@ -16,7 +16,7 @@ angular.module('sa20App')
         },
         getMasVistos: {
             method: 'GET',
-            url: envService.getHost() + 'posts/getMasVistos/.json'
+            url: envService.getHost() + 'posts/getMasVistos/:cantidad.json'
         }
     });
 });

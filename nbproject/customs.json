@@ -3,6 +3,9 @@
     "attributes": {
         "uib-carousel": {
             "context": "div"
+        },
+        "ui-sref": {
+            "context": "a"
         }
     }
 }

@@ -8,28 +8,19 @@
  * Controller of the sa20App
  */
 angular.module('sa20App')
-.controller('MainCtrl', function ($scope, postsService) {
+.controller('MainCtrl', function ($scope, postsService, $q) {
     $scope.init = function() {
-        $scope.posts = [
-            {
-                id: 1,
-                imagen: 'http://lorempixel.com/1400/680/'
-            },
-            {
-                id: 2,
-                imagen: 'http://lorempixel.com/1400/680/'
-            }
-        ];
-        $scope.getLasts(2, 4);
-        $scope.getMasVistos(2);
-    };
-    
-    $scope.getLasts = function(portada, siguientes) {
-        $scope.loadingUltimos = true;
-        postsService.getLasts({cantidad: portada + siguientes}, function(data) {
-            $scope.postsUltimos1 = data.posts.slice(0, portada);
-            $scope.postsUltimos2 = data.posts.slice(portada, portada + siguientes);
-            $scope.loadingUltimos = false;
+        var portada = 2;
+        var siguientes = 4;
+        $q.all([
+            postsService.getLasts({cantidad: portada + siguientes}).$promise,
+            postsService.getMasVistos({cantidad: 2}).$promise
+        ]).then(function(data) {
+            $scope.postsUltimos1 = data[0].posts.slice(0, portada);
+            $scope.postsUltimos2 = data[0].posts.slice(portada, portada + siguientes);
+            $scope.postsMasVistos = data[1].posts;
+            
+            // $scope.progressbar.complete();
         });
     };
     
