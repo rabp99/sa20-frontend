@@ -10,8 +10,8 @@ backend de posts-edit--------------------------------------------------------
 validar posts-add------------------------------------------------------------
 validar posts-edit-----------------------------------------------------------
 show posts en index en frontend----------------------------------------------
-backend categories
-view categories-add
+backend categories-----------------------------------------------------------
+view categories-add----------------------------------------------------------
 controller categories-add
 backend categories-add
 view categories-edit
