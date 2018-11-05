@@ -108,7 +108,10 @@
     }
 }
 
-
 .navbar-brand {
     padding: 10px $navbar-padding-horizontal;
+}
+
+.not-visible {
+    visibility: hidden;
 }

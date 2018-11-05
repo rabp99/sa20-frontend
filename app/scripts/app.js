@@ -17,7 +17,8 @@ angular
     'ngSanitize',
     'ngTouch',
     'ui.router',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'angular-scroll-animate'
 ])
 .config(function($stateProvider, $urlRouterProvider) {
     var mainState = {

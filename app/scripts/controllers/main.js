@@ -32,5 +32,15 @@ angular.module('sa20App')
         });
     };
     
+    $scope.animateElementIn = function($el) {
+        $('#logo-banner').addClass('not-visible');
+        $('#logo-banner').removeClass('animated fadeIn');
+    };
+    
+    $scope.animateElementOut = function($el) {
+        $('#logo-banner').removeClass('not-visible');
+        $('#logo-banner').addClass('animated fadeIn');
+    };
+    
     $scope.init();
 });

@@ -32,6 +32,7 @@ module.exports = function(config) {
       'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/code-prettify/src/prettify.js',
+      'bower_components/angular-scroll-animate/dist/angular-scroll-animate.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

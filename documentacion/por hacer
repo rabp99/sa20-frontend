@@ -19,3 +19,5 @@ controller categories-edit
 backend categories-edit
 validar categories-add
 validar categories-edit
+cambiar logo en login
+cambiar logo en index

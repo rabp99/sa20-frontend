@@ -4,6 +4,9 @@
         "uib-carousel": {
             "context": "div"
         },
+        "when-visible": {
+            "context": "div"
+        },
         "ui-sref": {
             "context": "a"
         }
