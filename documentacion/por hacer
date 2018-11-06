@@ -12,12 +12,13 @@ validar posts-edit-----------------------------------------------------------
 show posts en index en frontend----------------------------------------------
 backend categories-----------------------------------------------------------
 view categories-add----------------------------------------------------------
-controller categories-add
-backend categories-add
-view categories-edit
-controller categories-edit
-backend categories-edit
+controller categories-add----------------------------------------------------
+backend categories-add-------------------------------------------------------
+view categories-edit---------------------------------------------------------
+controller categories-edit---------------------------------------------------
+backend categories-edit------------------------------------------------------
 validar categories-add
 validar categories-edit
 cambiar logo en login
 cambiar logo en index
+implementar syntax highlighter angularjs
