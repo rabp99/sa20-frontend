@@ -17,8 +17,15 @@ backend categories-add-------------------------------------------------------
 view categories-edit---------------------------------------------------------
 controller categories-edit---------------------------------------------------
 backend categories-edit------------------------------------------------------
-validar categories-add
-validar categories-edit
-cambiar logo en login
-cambiar logo en index
+validar categories-add-------------------------------------------------------
+validar categories-edit------------------------------------------------------
+validar posts-add------------------------------------------------------------
+validar posts-edit-----------------------------------------------------------
+cambiar logo en login--------------------------------------------------------
+cambiar logo en index--------------------------------------------------------
 implementar syntax highlighter angularjs
+cambiar colores en admin
+categorias control por estados
+categorias control por número de resultados
+poner class active cuando este en estado post-add y post-edit
+disminuir heigth a posts table

@@ -18,9 +18,10 @@ angular
     'ngTouch',
     'ui.router',
     'ui.bootstrap',
-    'angular-scroll-animate'
+    'angular-scroll-animate',
+    'hljs'
 ])
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, hljsServiceProvider) {
     var mainState = {
         name: 'main',
         url: '/',
@@ -56,4 +57,9 @@ angular
     $stateProvider.state(postState);
     $stateProvider.state(postsAllState);
     $urlRouterProvider.when('', '/');
+    
+    hljsServiceProvider.setOptions({
+        // replace tab with 4 spaces
+        tabReplace: '    '
+    });
 });
