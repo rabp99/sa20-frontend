@@ -37,12 +37,11 @@ angular.module('sa20App')
     };
     
     $scope.animateElementIn = function($el) {
-        $('#logo-banner').addClass('not-visible');
-        $('#logo-banner').removeClass('animated fadeIn');
+        $('#logo-banner').addClass('animated fadeOut');
     };
     
     $scope.animateElementOut = function($el) {
-        $('#logo-banner').removeClass('not-visible');
+        $('#logo-banner').removeClass('not-visible fadeOut');
         $('#logo-banner').addClass('animated fadeIn');
     };
     

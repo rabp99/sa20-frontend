@@ -27,5 +27,5 @@ implementar syntax highlighter angularjs-------------------------------------
 cambiar colores en admin-----------------------------------------------------
 categorias control por estados-----------------------------------------------
 categorias control por número de resultados----------------------------------
-poner class active al menu cuando este en estado post-add y post-edit
+poner class active al menu cuando este en estado post-add y post-edit--------
 disminuir heigth a posts table
