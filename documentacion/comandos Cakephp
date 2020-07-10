@@ -1,9 +1,4 @@
 1. Seed database
 bin\cake DatabaseSeed
-bin\cake migrations seed --seed Database1Seed
-bin\cake migrations seed --seed Database2Seed
-bin\cake migrations seed --seed Database3Seed
-bin\cake migrations seed --seed Database4Seed
-bin\cake migrations seed --seed Database5Seed
-bin\cake migrations seed --seed Database6Seed
-bin\cake migrations seed --seed Database7Seed
+bin\cake migrations seed --seed CategoriesSeed
+bin\cake migrations seed --seed UsersSeed
