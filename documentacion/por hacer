@@ -28,9 +28,10 @@ cambiar colores en admin-----------------------------------------------------
 categorias control por estados-----------------------------------------------
 categorias control por número de resultados----------------------------------
 poner class active al menu cuando este en estado post-add y post-edit--------
+generar datos con seed RolesSeed---------------------------------------------
 generar datos con seed UsersSeed---------------------------------------------
 generar datos con seed CategoriesSeed----------------------------------------
-generar datos con seed PostsSeed
+generar datos con seed PostsSeed---------------------------------------------
 generar datos con seed TagsSeed
 generar datos con seed PostsTagsSeed
 disminuir heigth a posts table

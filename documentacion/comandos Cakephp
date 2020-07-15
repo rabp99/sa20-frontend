@@ -1,4 +1,6 @@
 1. Seed database
 bin\cake DatabaseSeed
-bin\cake migrations seed --seed CategoriesSeed
+bin\cake migrations seed --seed RolesSeed
 bin\cake migrations seed --seed UsersSeed
+bin\cake migrations seed --seed CategoriesSeed
+bin\cake migrations seed --seed PostsSeed
